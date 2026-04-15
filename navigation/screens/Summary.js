@@ -10,8 +10,8 @@ questions.forEach((q, i) => {
     const correct = answers[i];
     if(Array.isArray(q.correct)) {
         const correctSorted = [...q.correct].sort();
-        const answerSorted = [...correct].sort();
-        if(JSON.stringify(correctSorted) === JSON.stringify(answerSorted)) {
+        const answersSorted = [...correct].sort();
+        if(JSON.stringify(correctSorted) === JSON.stringify(answersSorted)) {
             score++;
         }
     } else if (correct === q.correct) {
