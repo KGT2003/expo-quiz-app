@@ -1,4 +1,5 @@
 {
+  "homepage": "https://KGT2003.github.io/expo-quiz-app",
   "name": "expo-quiz-app",
   "version": "1.0.0",
   "main": "index.js",
@@ -6,7 +7,9 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
-    "web": "expo start --web"
+    "web": "expo start --web",
+    "predeploy": "expo export -p web",
+    "deploy": "gh-pages --nojekyll -d dist"
   },
   "dependencies": {
     "@expo/metro-runtime": "~6.1.2",
