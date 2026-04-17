@@ -25,5 +25,8 @@
     "react-native-web": "^0.21.0",
     "react-test-renderer": "^19.1.0"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  }
 }
